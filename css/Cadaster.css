@@ -1,32 +1,70 @@
-.login_form{
+.login-form{
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
 }
-.login_header {
+.login__header {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
 }
-.login_header img {
-    width: 200px;
+.login__header img {
+    width: 60vh;
+    margin: 40px;
+    border-radius: 5px;
+    border: 3px solid #333;
 }
-.login_header h1{
+.login__header img:hover{
+    width: 80vh;
+    border: 3px solid aliceblue;
+}
+.login__header h1{
     color: #333;
     font-size: 1.5rem;
 }
-.login_input{
+.login__input{
     border: 2px solid #333;
     border-radius: 8px;
-    color: #333;
+    color: aliceblue;
     font-size: 1em;
     margin-bottom: 15px;
     max-width: 300px;
     outline: none;
     padding: 15px;
     width: 100%;
+}
+.login__input:hover{
+    background-color: rgba(238, 76, 146, 0.742);
+    color:aliceblue;
+    border: 2px solid aliceblue;   
+    transition-timing-function: ease-in;
+    transition-duration: 5s;
+}
+.login__input:click{
+    background-color: rgba(238, 76, 146, 0.742);
+    transition-timing-function: ease;
+    transition-duration: 5s;
+}
+.login__input::placeholder{
+    color: #333;
+
+}
+.button{
+    cursor:pointer;
+    color: #333;
+    background-color: rgba(186, 47, 108, 0.742);
+    border: 3px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: rgba(238, 76, 146, 0.742);
+    color:aliceblue;
+    border: 2px solid aliceblue;
+    transition-timing-function: ease;
+    transition-duration: 2s;
 }

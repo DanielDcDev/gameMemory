@@ -1,23 +1,22 @@
-const button = document.querySelector('.button');
-const input = document.querySelector('.login_input');
-const form = document.querySelector('.login_form')
+const input = document.querySelector('.login__input');
+const button = document.querySelector('.login__button');
+const form = document.querySelector('.login-form');
 
+/*const validateInput = ({ target }) => {
+  if (target.value.length > 3) {
+    button.removeAttribute('disabled');
+    return;
+  }
 
+  button.setAttribute('disabled', '');
+}*/
 
-const handleSubmit = (event)=>{
-    event.preventDefault();
-    console.log('test');
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  localStorage.setItem('player', input.value);
+  window.location = '/html/gamePage.html';
 }
 
-
-
-input.addEventListener('input', validateInput);
+//input.addEventListener('input', validateInput);
 form.addEventListener('submit', handleSubmit);
-
-function validateInput (arg) {
-    if(arg.value > 2){
-        button.removeAtribute('disabled');
-        return;
-    }
-    button.setAtribute('disabled','');
-}
