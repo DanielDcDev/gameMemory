@@ -68,3 +68,8 @@
     transition-timing-function: ease;
     transition-duration: 2s;
 }
+.atention{
+    color: #333;
+    padding: 10px;
+    text-decoration: underline;
+}
