@@ -1,4 +1,7 @@
 # gameMemory
 Jogo da memoria com Css, html e JavaScript
-
-<img src="/image/WhatsApp Image 2023-03-28 at 21.55.25.jpeg">
+<h1> Escopos do projeto</h1>
+<h2>Página Inicial</h2>
+<img src="/image/starFace.jpeg">
+<h2></h2>
+<img src="/image/GameFace.jpeg">
