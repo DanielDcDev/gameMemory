@@ -1,9 +1,8 @@
 const grid = document.querySelector('.grid');
-const caracter = [
-    'Baraggan',
+const characters = [
+    'yamamoto',
     'Aizen',
-    'Stark',
-    'Grimmjow ',
+    'Grimmjow',
     'Sado',
     'Byakuya',
     'Ichigo',
@@ -11,15 +10,8 @@ const caracter = [
     'Urahara',
     'Rukya',
     'Ulquiorra',
-    'Yhwach',
-    'yoruichi',
+    'Yoruichi',
     'Unohana',
-    'Kyoraku',
-    'Halibel',
-    'Shinji',
-    'Mayuri',
-    'Ginjo',
-    'Gremmy',
 ]
 
 
@@ -29,27 +21,39 @@ const createElement = (tag, className) => {
     
     return element;
   }
-const createCard = () => {
+const revealCard = ({target}) => {
+    
+}
+
+
+const createCard = (character) => {
 
     const card = createElement('div', 'card');
     const frontCard = createElement('div', 'face frontCard');
     const backCard = createElement('div', 'face backCard');
+    frontCard.style.backgroundImage = `url('/image/${character}.png')`;
 
     card.appendChild(frontCard);
     card.appendChild(backCard);
     
+    card.addEventListener('click', revealCard);
     return card;
 
 }
 const loadGame = () => {
-    caracter.forEach((caracter) => {
+    const duplicateCharacters = [
+        ...characters, ...characters
+    ];
 
-        const card = createCard();
+    const shuffledArray = duplicateCharacters.sort(() => Math.random() - 0.5 );
+
+    duplicateCharacters.forEach((character) => {
+
+        const card = createCard(character);
         grid.appendChild(card);
         
 
     });
 }
 
-createCard();
 loadGame();

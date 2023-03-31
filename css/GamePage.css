@@ -30,13 +30,20 @@ body{
     border: 2px solid black;
 }
 .frontCard{
-    background-image: url('/image/ichigo-kurosaki_cke.webp');
+    /*background-image: url('/image/ichigo-kurosaki_cke.webp');*/
     transform: rotateY(180deg);
 }
 .backCard{
     background-image: url('/image/backPage.jpg');
     backface-visibility: hidden;
 }
+
+.reveal-card{
+    transform: rotateY(180deg);
+}
+/*
 .card:hover{
+    transform: rotateY(180deg);
+    transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
