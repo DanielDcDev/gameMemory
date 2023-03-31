@@ -13,12 +13,20 @@ const caracter = [
     'Ulquiorra',
     'Yhwach',
     'yoruichi',
+    'Unohana',
+    'Kyoraku',
+    'Halibel',
+    'Shinji',
+    'Mayuri',
+    'Ginjo',
+    'Gremmy',
 ]
 
 
 const createElement = (tag, className) => {
     const element = document.createElement(tag);
     element.className = className;
+    
     return element;
   }
 const createCard = () => {
@@ -29,7 +37,7 @@ const createCard = () => {
 
     card.appendChild(frontCard);
     card.appendChild(backCard);
-
+    
     return card;
 
 }
@@ -38,8 +46,10 @@ const loadGame = () => {
 
         const card = createCard();
         grid.appendChild(card);
+        
 
     });
 }
 
 createCard();
+loadGame();
