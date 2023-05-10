@@ -1,15 +1,38 @@
 body{
     background-color: rgb(186, 47, 107);
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:rgb(134, 41, 81); ;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px ;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(186, 47, 107, 0.5);
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+}
 .grid{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 15px;
     width: 100%;
     max-width: 1000px;
     /*height: 300px;*/
     
-    margin: 10vh auto;
+    margin: 0 auto;
 }
 .card{
     aspect-ratio: 3/4;
@@ -35,7 +58,7 @@ body{
     transform: rotateY(180deg);
 }
 .backCard{
-    background-image: url('/image/backPage.jpg');
+    background-image: url('/image/backPage.jpg/');
     backface-visibility: hidden;
 }
 
