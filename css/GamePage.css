@@ -28,6 +28,7 @@ body{
     background-position: center;
     border-radius: 10px;
     border: 2px solid black;
+    transition: all 400ms ease;
 }
 .frontCard{
     /*background-image: url('/image/ichigo-kurosaki_cke.webp');*/
@@ -40,6 +41,10 @@ body{
 
 .reveal-card{
     transform: rotateY(180deg);
+}
+.disabled-Card{
+    filter:saturate(0);
+    opacity: 0,5;
 }
 /*
 .card:hover{
